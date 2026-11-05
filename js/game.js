@@ -47,11 +47,8 @@ function animate()
 		particles[p].x += particles[p].vx;
 		particles[p].y += particles[p].vy;
 			
-		//-------------------------------------------------INSTRUCTIONS----------------------------------------------------------
-			//	1. Re-calculate the particle's vx to be a random number between -1 and 1
-			//  2. Re-calculate the particle's vy to be a random number between -1 and 1
-			//  3. Run the program and see what happens when you randomly generate velocities every frame.
-		//-------------------------------------------------------------------------------------------------------------------------
+		particles[p].vx = Math.random() * 2 - 1;
+		particles[p].vy = Math.random() * 2 - 1;--------------------------------------------------------------------------------------------------------------------
 		
 		particles[p].drawRect();
 	}
